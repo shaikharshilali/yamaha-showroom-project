@@ -1,0 +1,376 @@
+/* General Styles */
+body {
+    font-family: Brush Script MT ,cursive ;
+	background-image: url('image/backgroundimage.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: left; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 150px; /* Adjust logo size */
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+        background-image: url('mage/backgroundimage.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    text-align: center;
+    color: white; /* Adjust text color for better visibility */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+.hero .sub-heading,
+
+hero .main-heading {
+    color: white; /* Ensure text is readable on the background image */
+}
+
+.hero .btn {
+    background-color: #ff0000; /* Example button color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #ffcc00; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+	display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+
+.bikes {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.bike-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Product Listing */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 280px;
+    margin: 15px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.product p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+.product form {
+    display: flex;
+    flex-direction: column;
+}
+
+.product input, .product button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.product button {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.product button:hover {
+    background-color: #ff0000;
+}
+
+/* About Section */
+.about-content {
+    padding: 50px 20px;
+    text-align: center;
+}
+.about-content h1 {
+    border: 2px solid #000; /* Adds a solid black border */
+    background-color: #f0f0f0; /* Adds a light gray background */
+    padding: 15px; /* Adds space inside the box */
+    text-align: center; /* Centers the text */
+    display: inline-block; /* Ensures the box wraps around the text */
+    margin: 20px auto; /* Centers the box horizontally and adds space above and below */
+    border-radius: 10px; /* Rounds the corners of the box */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+.about-content p {
+    border: 2px solid #000; /* Adds a solid black border */
+    background-color: #f0f0f0; /* Adds a light gray background */
+    padding: 15px; /* Adds space inside the box */
+    text-align: center; /* Centers the text */
+    margin: 20px auto; /* Adds space above and below and centers the box */
+    border-radius: 10px; /* Rounds the corners of the box */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    max-width: 800px; /* Limits the width of the box */
+    width: 90%; /* Ensures responsiveness */
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 50px 20px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+.footerBefore {
+    background-color: #f8f9fa;
+    color: #fff;
+    padding: 20px;
+	text-align
+}
+.auth-form {
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.auth-form h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555;
+    font-weight: bold;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background-color: #cc0000;
+}
+
+.auth-form p {
+    text-align: center;
+    margin-top: 15px;
+    color: #555555;
+}
+
+.auth-form p.error {
+    color: red;
+    text-align: center;
+}
+
+.auth-form a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.auth-form a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px; /* Responsive design */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
